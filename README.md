@@ -87,6 +87,7 @@ Git LFS.
 | `Packages` | Unity dependencies and the embedded RayNeo ARDK package |
 | `ProjectSettings` | Unity project and Android player settings |
 | `Tools` | ESP32 simulation and RayNeo diagnostic PowerShell scripts |
+| `ESP32Firmware` | ESP32 sensor firmware, wiring, and upload instructions |
 | `TestVideos` | Real-device demonstration videos |
 
 Generated Unity folders such as `Library`, `Logs`, `UserSettings`, and `Builds`
@@ -131,6 +132,11 @@ For a computer-generated test stream, see
 [`ESP32_TEST_README.md`](ESP32_TEST_README.md) and
 `Tools/Send-Esp32TestData.ps1`.
 
+The real sensor firmware is available in
+[`ESP32Firmware/ACL_RayNeo_Sensor`](ESP32Firmware/ACL_RayNeo_Sensor/README.md).
+Copy `secrets.example.h` to `secrets.h`, enter the local Wi-Fi credentials and
+headset IPv4 address, and then upload the sketch to the ESP32.
+
 ## Build for RayNeo X3 Pro
 
 In Unity, select:
@@ -163,4 +169,3 @@ sensor permissions are declared in the custom Android manifest.
 This is a research and prototype application, not a certified medical device.
 Use it only in a clear, supervised test area. Confirm the complete physical
 route is free of obstacles before beginning a running trial.
-

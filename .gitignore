@@ -35,8 +35,10 @@ Desktop.ini
 *.keystore
 *.jks
 
+# Local ESP32 network credentials
+ESP32Firmware/**/secrets.h
+
 # Crash dumps and local diagnostics
 *.dmp
 *.tombstone
 sysinfo.txt
-
