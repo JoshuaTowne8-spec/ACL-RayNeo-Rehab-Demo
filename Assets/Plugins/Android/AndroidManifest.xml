@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.unity3d.player">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
+
+    <application>
+        <meta-data android:name="com.rayneo.mercury.app" android:value="true" />
+
+        <activity android:name="com.rayneo.openxradapter.UnityOpenXrActivity"
+                  android:theme="@style/UnityThemeSelector"
+                  android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+        </activity>
+    </application>
+</manifest>
